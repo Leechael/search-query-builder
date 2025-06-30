@@ -15,6 +15,7 @@ lerna-debug.log*
 # Build outputs
 docs/assets/
 docs/demo.html
+docs/index.html
 
 # IDE
 .vscode/
