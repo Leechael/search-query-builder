@@ -90,8 +90,8 @@ export function InterTokenInput({ inputIndex, focused, placeholder, isLast = fal
       }
       
       // Clear dropdown selection if navigating within text
-      if (showDropdown && highlightedIndex >= 0) {
-        setHighlightedIndex(-1);
+      if (showDropdown && dropdownHighlightedIndex >= 0) {
+        setDropdownHighlightedIndex(-1);
       }
       return;
     }
@@ -113,7 +113,7 @@ export function InterTokenInput({ inputIndex, focused, placeholder, isLast = fal
         setDropdownHighlightedIndex(0);
       } else {
         // Navigate within dropdown
-        setDropdownHighlightedIndex(prev => 
+        setDropdownHighlightedIndex((prev: number) => 
           prev < filteredFilterKeys.length - 1 ? prev + 1 : 0
         );
       }
@@ -134,7 +134,7 @@ export function InterTokenInput({ inputIndex, focused, placeholder, isLast = fal
         setDropdownHighlightedIndex(filteredFilterKeys.length - 1);
       } else {
         // Navigate within dropdown
-        setDropdownHighlightedIndex(prev => 
+        setDropdownHighlightedIndex((prev: number) => 
           prev > 0 ? prev - 1 : filteredFilterKeys.length - 1
         );
       }
@@ -172,7 +172,7 @@ export function InterTokenInput({ inputIndex, focused, placeholder, isLast = fal
         // First Escape: close dropdown
         setActiveDropdown({ type: null });
         setDropdownRequested(false);
-        setHighlightedIndex(-1);
+        setDropdownHighlightedIndex(-1);
       } else {
         // Second Escape: blur input and clear
         setInputValue('');

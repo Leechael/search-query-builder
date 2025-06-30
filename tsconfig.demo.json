@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "@typescript-eslint/no-unused-vars": "off"
+  },
+  "include": [
+    "src/demo/**/*",
+    "src/components/SearchQueryBuilder.tsx",
+    "src/components/FilterKeyDropdownEnhanced.tsx",
+    "src/components/InterTokenInput.tsx",
+    "src/components/TokenizedQueryGrid.tsx",
+    "src/components/PlainTextInput.tsx",
+    "src/components/Icons.tsx",
+    "src/hooks/useQueryBuilder.ts",
+    "src/utils/dropdownManager.ts",
+    "src/types/index.ts",
+    "src/index.css"
+  ],
+  "exclude": [
+    "src/**/*.test.tsx",
+    "src/**/*.test.ts"
+  ]
+}
