@@ -1,10 +1,13 @@
 # Search Query Builder
 
+> [!NOTE]
+> This is an experiment project fully build by Claude Code.
+
 A powerful and flexible search query interface inspired by Sentry's search functionality, built with React and TypeScript.
 
 ## 🚀 Live Demo
 
-**[View Interactive Demo →](https://your-username.github.io/search-query-builder/)**
+**[View Interactive Demo →](https://leechael.github.io/search-query-builder/)**
 
 Try all features including keyboard navigation, autocomplete, and multiple instances!
 
@@ -174,7 +177,7 @@ const handleSearch = async (searchQuery: string) => {
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/search-query-builder.git
+git clone https://github.com/leechael/search-query-builder.git
 cd search-query-builder
 
 # Install dependencies
@@ -232,55 +235,3 @@ npm run test:coverage
 - ✅ **Keyboard Navigation** - Full keyboard support
 - ✅ **Focus Management** - Focus states and transitions
 - ✅ **Multiple Instances** - Global dropdown management
-
-## 🚀 Recent Updates
-
-### v1.0.0 (Latest)
-
-- ✅ **Focus State Management** - Maintain focus appearance during dropdown interaction
-- ✅ **Click Outside to Close** - Proper outside click detection
-- ✅ **Single Dropdown Management** - Global state ensures only one dropdown open
-- ✅ **Tab Switching Fixed** - Resolved event handling conflicts
-- ✅ **Keyboard Navigation** - Fixed initial highlighting issues
-- ✅ **Performance Optimizations** - Reduced re-renders and improved responsiveness
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-### Quick Contribution Steps
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Make your changes and add tests
-4. Ensure all tests pass: `npm test`
-5. Commit your changes: `git commit -m 'Add amazing feature'`
-6. Push to the branch: `git push origin feature/amazing-feature`
-7. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Inspired by [Sentry's](https://sentry.io) search interface design
-- Built with [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/)
-- Styled with [Tailwind CSS](https://tailwindcss.com/)
-
-## 📞 Support
-
-- 📖 **Documentation**: [GitHub Pages Demo](https://your-username.github.io/search-query-builder/)
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/your-username/search-query-builder/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/your-username/search-query-builder/discussions)
-- 📧 **Email**: your-email@example.com
-
----
-
-<div align="center">
-
-**[Live Demo](https://your-username.github.io/search-query-builder/)** • **[Documentation](./docs/)** • **[Contributing](CONTRIBUTING.md)** • **[License](LICENSE)**
-
-Made with ❤️ by the development team
-
-</div>
